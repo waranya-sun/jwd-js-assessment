@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="icon" href="./gameIcon.svg" type="image/svg+xml" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -14,35 +15,81 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
     <title>Quiz</title>
   </head>
-  <body>
-    <div class="container m-5" id="start">
-      <div class="card" style="width: 18rem">
+  <body
+    style="
+      background-color: #ffffff;
+      background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    "
+  >
+    <div
+      class="container-fluid"
+      id="start"
+      style="
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div class="card text-center py-4" style="width: 38rem; margin: auto">
         <div class="card-body">
-          <h5 class="card-title">Test your knowledge</h5>
-          <p class="card-text">Some quick description about the quiz .</p>
-          <a class="btn btn-primary">Start</a>
+          <h2 class="card-title pb-4">Test your knowledge</h2>
+          <p class="card-text pb-4" style="font-size: 1.7rem">
+            Some quick description about the quiz .
+          </p>
+          <a class="btn btn-primary px-5" style="color: #fff; font-size: 2rem"
+            >Start</a
+          >
         </div>
       </div>
     </div>
 
     <!-- (B) QUIZ CONTAINER -->
-    <div class="container" id="quizBlock" style="display: none">
-      <div class="mb-5">
-        <h2>Test your knowledge</h2>
-        - Time remaining <span id="time">01:00</span>
+    <div class="container pt-5" id="quizBlock" style="display: none">
+      <div
+        class="mb-5 d-flex justify-content-between align-items-center"
+        style="padding: 2rem"
+      >
+        <h1 style="font-size: 3.1rem">Test your knowledge</h1>
+        <h4>Time remaining : <span id="time">60</span></h4>
       </div>
-      <div id="quizWrap"></div>
+      <div id="quizWrap" class="pb-3" style="padding: 0 2rem"></div>
 
-      <div>
-        <button type="button" class="btn btn-primary" id="btnSubmit">
-          Submit Quiz
-        </button>
-        <button type="button" class="btn btn-primary" id="btnReset">
-          Reset Quiz
-        </button>
-        <span id="score"></span>
+      <div
+        class="d-flex justify-content-between"
+        style="padding: 1rem 2rem 6rem 2rem"
+      >
+        <div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="btnSubmit"
+            style="margin-right: 1rem; font-size: 1.5rem"
+          >
+            Submit Quiz
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="btnReset"
+            style="font-size: 1.5rem"
+          >
+            Reset Quiz
+          </button>
+        </div>
+        <div>
+          <span id="score"></span>
+        </div>
       </div>
     </div>
 

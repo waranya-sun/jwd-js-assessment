@@ -37,23 +37,23 @@ window.addEventListener('DOMContentLoaded', () => {
       a: 1, // array index 1 - so Earth is the correct answer here
     },
     {
-      q: 'Which is the largest ocean on Earth?',
+      q: 'Which is the largest ocean on earth?',
       o: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
       a: 3,
     },
     {
-      q: 'What is the capital of Australia',
+      q: 'What is the capital of australia',
       o: ['Sydney', 'Canberra', 'Melbourne', 'Perth'],
       a: 1,
     },
     // Requirement 3: Add 2 more questions to the app (each question must have 4 options).
     {
-      q: 'Hyper Text Markup Language Stands For?',
+      q: 'Hyper Text Markup Language stands For?',
       o: ['jQuery', 'XHTML', 'HTML', 'CSS'],
       a: 2,
     },
     {
-      q: 'Cascading Style sheet stands for?',
+      q: 'Cascading Style Sheet stands for?',
       o: ['CSS', 'XHTML', 'HTML', 'jQuery'],
       a: 0,
     },

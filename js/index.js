@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
     },
     // Requirement 3: Add 2 more questions to the app (each question must have 4 options).
     {
-      q: 'Hyper Text Markup Language stands For?',
+      q: 'Hyper Text Markup Language stands for?',
       o: ['jQuery', 'XHTML', 'HTML', 'CSS'],
       a: 2,
     },
